@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/checkboxes.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/volume.css">
+    <link rel="shortcut icon" href="#">
+    <title>Игра "Крестики-нолики"</title>
+</head>
+<body>
+    <div class="mainWrapper">
+        <header>
+            <span></span>
+            <img src="img/user.png" id="userImg"> 
+        </header>
+        <div>
+            <main>
+                <Table>
+                    <caption>
+                        <h1>Крестики-нолики</h1>
+                    </caption>
+                    <tbody>
+                        <tr>
+                            <td class="0"></td>
+                            <td class="1"></td>
+                            <td class="2"></td>
+                        </tr>
+                        <tr>
+                            <td class="3"></td>
+                            <td class="4"></td>
+                            <td class="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="6"></td>
+                            <td class="7"></td>
+                            <td class="8"></td>
+                        </tr>
+                    </tbody>
+                </Table>
+            </main>
+            <div class="under">
+                <p>Вы крестик</p>
+            </div> 
+            <div class="btn">
+                <div>
+                    <button>Старт</button>
+                    <button>Стоп</button>
+                </div>
+            </div>
+            <footer class="menu">
+                    <ul class="checkboxes">
+                        <li><label for="X"> <input type ="radio" name="radio" id="X" checked> X крестик</label> </li> 
+                        <li> <label for="O"><input type ="radio" name="radio" id="O"> O нолик</label> </li>
+                    </ul>
+                    <ul class="level">
+                        <li><label for="easy"> <input type ="radio" name="level" id="easy" checked> Новичок</label> </li>
+                        <li><label for="hard"><input type ="radio" name="level" id="hard"> Продвинутый</label> </li> 
+                    </ul>
+            </footer>
+            <div class="volume">
+                <input type="range" id="volume" name="volume" min="0" max="100" step="1">
+                <img src="img/1.png" id="imgvol">
+            </div>
+        </div>
+    </div>
+    <form class="form1">
+        <span id="close">X</span>
+        <div class="wrapper">
+            <div class="block">
+                <label for="name">Введите имя:</label>
+                <input type="text" id="name" placeholder=" Введите имя...">
+            </div>
+            <div class="block_btn">
+                <button id="ok">Ok</button>
+                <button id="cancel">Отмена</button>
+            </div>
+        </div>
+    </form>
+    <form class="form2">
+        <span id="close2">X</span>
+        <div class="wrapper2">
+        <div class="stat"></div>
+        </div>
+    </form>
+    <script src="js/form.js" type="module"></script>
+    <script src="js/radios.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>

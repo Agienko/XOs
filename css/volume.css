@@ -1,0 +1,28 @@
+#volume {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 70px;
+    left: -42px ;
+    height: 60px;
+    display: none;
+}
+.volume{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+#imgvol {
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px ;
+    
+    
+}
+#imgvol:hover {
+    border-radius: 50%;
+    background-color:rgb(231, 187, 121);
+    transition: all 0.8s;
+    transform:scale(1.1)
+}
